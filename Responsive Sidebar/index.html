@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Sidebar</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/feather-icons"></script> <!-- For icons -->
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-header">
+      <div class="logo">Logo</div>
+      <button id="close-btn" class="close-btn">&times;</button>
+    </div>
+    <ul class="sidebar-links">
+      <li><i data-feather="home"></i> Home</li>
+      <li><i data-feather="user"></i> Profile</li>
+      <li><i data-feather="settings"></i> Settings</li>
+      <li><i data-feather="bell"></i> Notifications</li>
+      <li><i data-feather="help-circle"></i> Help</li>
+    </ul>
+  </aside>
+
+  <!-- Main content -->
+  <div class="main-content">
+    <button id="toggle-btn" class="toggle-btn">☰</button>
+    <h1>Welcome to the Dashboard</h1>
+    
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

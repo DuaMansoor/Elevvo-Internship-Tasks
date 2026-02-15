@@ -1,0 +1,124 @@
+:root {
+  --bg: #d5cff5;
+  --text: #111827;
+  --card: #42557c;
+  --primary: #42557c;
+}
+
+body.dark {
+  --bg: #111827;
+  --text: #f9fafb;
+  --card: #595f68;
+  --primary: #595f68;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: 0.3s ease;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+}
+
+#themeToggle {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero p {
+  margin: 20px 0;
+}
+
+.cta-btn {
+  padding: 12px 25px;
+  background: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.feature-grid,
+.testimonial-grid,
+.pricing-grid {
+  display: grid;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.feature-grid {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.testimonial-grid {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.pricing-grid {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+/* Cards */
+.card {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.pricing .popular {
+  border: 2px solid var(--primary);
+}
+
+/* CTA */
+.cta {
+  background: var(--primary);
+  color: white;
+}
+
+.cta .cta-btn {
+  background: white;
+  color: var(--primary);
+}
+
+/* Footer */
+footer {
+  padding: 20px;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+}
