@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background: #ebedf0;
+  line-height: 1.6;
+}
+
+/* Scroll Animation */
+.section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+}
+
+.section.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 6rem 2rem;
+  background: linear-gradient(135deg, #121d30, #0ea5e9);
+  color: white;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero button {
+  padding: 0.8rem 2rem;
+  background: white;
+  color: #0f172a;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.hero button:hover {
+  background: #145b70;
+  transform: scale(1.05);
+}
+
+/* Sections */
+.features,
+.reviews,
+.pricing {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.features h2,
+.reviews h2,
+.pricing h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Cards Layout */
+.feature-cards,
+.review-cards,
+.pricing-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+/* Blue Gradient Cards */
+.card,
+blockquote {
+  background: linear-gradient(135deg, #121d30, #0ea5e9);
+  color: white;
+  padding: 1.8rem;
+  border-radius: 12px;
+  width: 260px;
+  box-shadow: 0 10px 25px rgba(37, 17, 73, 0.15);
+  transition: 0.3s ease;
+}
+
+.card:hover,
+blockquote:hover {
+  transform: translateY(-10px);
+}
+
+.icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+blockquote span {
+  display: block;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #e0f2fe;
+}
+
+/* Pricing Button */
+.pricing button {
+  margin-top: 1rem;
+  padding: 0.6rem 1.5rem;
+  background: white;
+  color: #0f172a;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.pricing button:hover {
+  background: #f1f5f9;
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  padding: 2rem;
+  text-align: center;
+  background: #0f172a;
+  color: white;
+}
+
+.social-icons {
+  margin-top: 1rem;
+}
+
+.social-icons a {
+  margin: 0 0.6rem;
+  font-size: 1.6rem;
+  color: white;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #38bdf8;
+  transform: scale(1.2);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .feature-cards,
+  .review-cards,
+  .pricing-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero {
+    padding: 4rem 1.5rem;
+  }
+}
