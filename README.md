@@ -19,6 +19,7 @@ Throughout this internship, I built responsive, modern, and interactive web appl
 .API Integration (Fetch / Axios)
 
 📂 Projects Included
+
 🔹 Collapsible Responsive Sidebar
 
 A responsive sidebar with toggle functionality and smooth animations, designed for both desktop and mobile screens.
